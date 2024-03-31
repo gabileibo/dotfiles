@@ -6,5 +6,8 @@ k9s/.config/k9s/screen-dumps
 # gitconfig
 /gitconfig/.gitconfig
 
+# zsh
+zshrc/*.zsh
+
 # MISC 
 .DS_Store

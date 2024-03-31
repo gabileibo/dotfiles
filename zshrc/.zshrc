@@ -37,9 +37,11 @@ autoload -U compinit && compinit
 export PATH="$PATH:$HOME/.rvm/bin"
 
 # Node Version Manager
-export NVM_HOME=$HOME/.nvm
-export PATH=${PATH}:${NVM_HOME}
-source ${NVM_HOME}/nvm.sh
+export NVM_DIR="$HOME/.nvm"
+  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh" 
+  # This loads nvm bash_completion
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" 
 
 # PNPM configuration
 export PNPM_HOME="$HOME/Library/pnpm"
@@ -69,3 +71,12 @@ export SPACESHIP_KUBECTL_VERSION_SHOW=false
 eval "$(starship init zsh)"
 
 # ---------- Environment Configuration End ---------- #
+
+# ---------- Local Overrides ---------- #
+
+# Load local overrides
+if [ -f ~/.local.zsh ]; then
+  source ~/.local.zsh
+fi
+
+# ---------- Local Overrides End ---------- #
