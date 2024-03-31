@@ -1,4 +1,6 @@
 # Managed by stow
+export PATH=/opt/homebrew/bin:$PATH
+
 # Enable auto CD and set CD path for easier navigation
 setopt auto_cd
 cdpath=($HOME/code)
