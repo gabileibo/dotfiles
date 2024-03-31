@@ -6,7 +6,6 @@
 ### gitconfig 
 ```
 export EMAIL=<your-email@example.com>
-export GITHUB_USERNAME=<your-github-username>
 envsubst < _templates/gitconfig/.gitconfig.tmpl > gitconfig/.gitconfig 
 ```
 
