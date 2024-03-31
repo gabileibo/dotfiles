@@ -173,6 +173,10 @@ style = "bg:teal"
 format = '[[ $symbol( $context ) ](fg:base bg:blue )]($style)'
 disabled = false
 
+[[kubernetes.contexts]]
+context_pattern = "gke_.*_(?P<cluster>[\\w-]+)"
+context_alias = "gke-$cluster"
+
 [gcloud]
 symbol = "󱇶"
 style = "bg:purple"
