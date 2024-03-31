@@ -1,8 +1,7 @@
 \.git
 \.gitignore
-\.gitkeep$
 
-\_templates
+^/*.tmpl
 
 ^/README.*
 

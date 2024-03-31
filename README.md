@@ -6,7 +6,7 @@
 ### gitconfig 
 ```
 export EMAIL=<your-email@example.com>
-envsubst < _templates/gitconfig/.gitconfig.tmpl > gitconfig/.gitconfig 
+envsubst < gitconfig/.gitconfig.tmpl > gitconfig/.gitconfig 
 ```
 
 ## Stow 
@@ -32,5 +32,5 @@ stow --target $HOME starship
 ### gitconfig
 
 ```
-stow --target $HOME --ignore='\.gitkeep' gitconfig
+stow --target $HOME --ignore='.gitconfig.tmpl' gitconfig
 ```
