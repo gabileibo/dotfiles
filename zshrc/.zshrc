@@ -6,6 +6,8 @@ setopt auto_cd
 cdpath=($HOME/code)
 
 # ---------- Environment Configuration Start ---------- #
+# python3 
+export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH"
 
 # Go environment setup
 export GOPATH=$HOME/go
