@@ -58,6 +58,12 @@ export KUBECONFIG="$HOME/.kube/config"
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 alias k="kubectl"
 
+# Docker BuildKit configuration
+if command -v docker-buildx > /dev/null && [ ! -e ~/.docker/cli-plugins/docker-buildx ]; then
+  mkdir -p ~/.docker/cli-plugins
+  ln -sfn $(which docker-buildx) ~/.docker/cli-plugins/docker-buildx
+fi
+
 # Set k9s configuration
 export K9S_CONFIG_DIR="$HOME/.config/k9s"
 
@@ -82,3 +88,4 @@ if [ -f ~/.local.zsh ]; then
 fi
 
 # ---------- Local Overrides End ---------- #
+. "$HOME/.local/bin/env"
