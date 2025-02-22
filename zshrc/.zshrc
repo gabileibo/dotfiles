@@ -78,6 +78,9 @@ export SPACESHIP_KUBECONTEXT_SHOW=true
 export SPACESHIP_KUBECTL_VERSION_SHOW=false
 eval "$(starship init zsh)"
 
+# SSH configuration
+export PATH="/usr/local/opt/openssh/bin:$PATH"
+
 # ---------- Environment Configuration End ---------- #
 
 # ---------- Local Overrides ---------- #
@@ -89,3 +92,6 @@ fi
 
 # ---------- Local Overrides End ---------- #
 . "$HOME/.local/bin/env"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:$HOME/.lmstudio/bin"
