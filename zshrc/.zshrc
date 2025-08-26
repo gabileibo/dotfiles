@@ -6,7 +6,7 @@ setopt auto_cd
 cdpath=($HOME/code)
 
 # ---------- Environment Configuration Start ---------- #
-# python3 
+# python3
 export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH"
 
 # Go environment setup
@@ -41,9 +41,9 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Node Version Manager
 export NVM_DIR="$HOME/.nvm"
   # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh" 
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
   # This loads nvm bash_completion
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" 
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
 
 # PNPM configuration
 export PNPM_HOME="$HOME/Library/pnpm"
@@ -72,6 +72,9 @@ if [ -f '$HOME/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/google-cloud-sdk/
 if [ -f '$HOME/google-cloud-sdk/completion.zsh.inc' ]; then . '$HOME/google-cloud-sdk/completion.zsh.inc'; fi
 source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
 source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
+
+# AWS configuration
+export AWS_PAGER=""
 
 # Starship prompt customization
 export SPACESHIP_KUBECONTEXT_SHOW=true

@@ -19,6 +19,7 @@ $terraform\
 $kubernetes\
 [](fg:blue bg:purple)\
 $gcloud\
+$aws\
 [ ](fg:purple)\
 $line_break$character"""
 
@@ -181,6 +182,12 @@ context_alias = "gke-$cluster"
 symbol = "󱇶"
 style = "bg:purple"
 format = '[[ $symbol( $project ) ](fg:base bg:purple )]($style)'
+
+[aws]
+symbol = ""
+style = "bg:purple"
+format = '[[ $symbol( $profile ) ](fg:base bg:purple )]($style)'
+
 
 [line_break]
 disabled = false
