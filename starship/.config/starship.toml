@@ -181,7 +181,7 @@ context_alias = "gke-$cluster"
 [gcloud]
 symbol = "󱇶"
 style = "bg:purple"
-format = '[[ $symbol( $project ) ](fg:base bg:purple )]($style)'
+format = '[[ $symbol( $project\[$domain\] )  ](fg:base bg:purple )]($style)'
 
 [aws]
 symbol = ""
