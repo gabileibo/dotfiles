@@ -18,6 +18,7 @@ $terraform\
 [](fg:teal bg:blue)\
 $kubernetes\
 [](fg:blue bg:purple)\
+$docker_context\
 $gcloud\
 $aws\
 [ ](fg:purple)\
@@ -181,13 +182,19 @@ context_alias = "gke-$cluster"
 [gcloud]
 symbol = "󱇶"
 style = "bg:purple"
-format = '[[ $symbol( $project\[$domain\] )  ](fg:base bg:purple )]($style)'
+format = '[[( $symbol $project )](fg:base bg:purple )]($style)'
 
 [aws]
 symbol = ""
 style = "bg:purple"
 format = '[[ $symbol( $profile ) ](fg:base bg:purple )]($style)'
 
+[docker_context]
+symbol = ""
+style = "bg:purple"
+format = '[[ $symbol( $context ) ](fg:base bg:purple )]($style)'
+disabled = false
+only_with_files = false
 
 [line_break]
 disabled = false
